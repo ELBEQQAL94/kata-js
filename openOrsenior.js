@@ -30,14 +30,16 @@ openOrSenior([[3, 12],[55,1],[91, -2],[54, 23]]),['Open', 'Open', 'Open', 'Open'
 openOrSenior([[59, 12],[55,-1],[12, -2],[12, 12]]),['Senior', 'Open', 'Open', 'Open']) */
 
 function openOrSenior (lists){
+
+    return lists.map(([age, handicap]) =>  (age > 54 && handicap > 7) ? 'Senior' : 'Open');
     
-    return lists.map(list => {
+    /* return lists.map(list => {
          if(list[0] >= 55 && list[1] > 7) {
             return list = 'Senior';
          }
 
         return list = 'Open';
-    });
+    }); */
     
 }
 
