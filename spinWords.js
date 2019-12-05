@@ -15,6 +15,10 @@ function spinWords(str){
 
 }
 
+function spinWords(string){
+    return string.replace(/\w{5,}/g, function(w) { return w.split('').reverse().join('') })
+}
+
 console.log(spinWords("Welcome")) //, "emocleW");
 
 //console.log(spinWords("Hey fellow warriors")) //, "Hey wollef sroirraw");
