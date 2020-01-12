@@ -3,6 +3,7 @@
 // that is, baseexponent.
 
 function digPow(n, p) {
+  
   let arr = n.toString().split("");
 
   let k = p;
